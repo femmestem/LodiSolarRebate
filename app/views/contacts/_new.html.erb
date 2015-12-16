@@ -1,5 +1,5 @@
 <div class="row">
-<%= simple_form_for(@contact) do |f| %>
+<%= simple_form_for @contact, html: { class: "column small-10 small-offset-1"} do |f| %>
     <%= field_set_tag 'Contact Form' do %>
         <%= f.input :name, label: "Name (required)", placeholder: "John Smith" %>
         <%= f.input :email, label: "Email (required)", placeholder: "jsmith@email.com" %>
