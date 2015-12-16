@@ -1,0 +1,17 @@
+<div class="row">
+<%= simple_form_for(@contact) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <div>
+    <%= f.input :street, :required => false, label: "Street Address", input_html: { class: 'input-optional' } %>
+    <%= f.input :city, :required => false, input_html: { class: 'input-optional', value: "Lodi" } %>
+    <%= f.input :state, :required => false, input_html: { class: 'input-optional', value: "California" } %>
+    <%= f.input :zip, :required => false, input_html: { class: 'input-optional' } %>
+    <label class="input" for="contact_message">Questions or Comments</label>
+    <%= f.text_area :message, input_html: { class: 'input-optional' } %>
+    </div>
+    <%= f.button :submit, label: "Submit", value: "Submit" %>
+    </div>
+<% end %>
+</div>
