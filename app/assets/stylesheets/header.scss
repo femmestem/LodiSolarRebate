@@ -1,0 +1,11 @@
+.main-header {
+    margin-bottom: rem-calc(24);
+
+    &__logo {}
+
+    &__title {
+        font-size: rem-calc(24);
+    }
+
+    &__info {}
+}
