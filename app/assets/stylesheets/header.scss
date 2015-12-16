@@ -1,5 +1,4 @@
 .main-header {
-    margin-bottom: rem-calc(24);
 
     &__logo {}
 
@@ -8,4 +7,8 @@
     }
 
     &__info {}
+}
+
+.main-header.row {
+    margin-bottom: rem-calc(24);
 }
