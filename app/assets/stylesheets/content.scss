@@ -3,6 +3,19 @@
         margin-top: rem-calc(24);
         margin-bottom: rem-calc(56);
 
+        .subheader-row {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin-bottom: rem-calc(16);
+            img {
+                max-width: rem-calc(85);
+            }
+            .subheader {
+
+            }
+        }
+
         p {
 
         }
