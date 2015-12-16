@@ -1,4 +1,8 @@
 .subheader.red {
-    font-size: 2rem;
     color: red;
+}
+
+.row section.row, section.row {
+    margin-top: rem-calc(24);
+    margin-bottom: rem-calc(32);
 }
