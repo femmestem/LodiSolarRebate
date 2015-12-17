@@ -16,7 +16,12 @@ $main-header-small-height: rem-calc(90);
         margin-top: rem-calc(24);
     }
 
-    &__info {}
+    &__info {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+    }
+    + div > div { padding-top: 1rem; }
 }
 
 @media #{$small-only} {
@@ -29,6 +34,11 @@ $main-header-small-height: rem-calc(90);
 
         & + div.columns {
             margin-top: $main-header-small-height;
+        }
+        &__info {
+        position: relative;
+        top: 0rem;
+        left: -1.5rem;
         }
     }
 }
