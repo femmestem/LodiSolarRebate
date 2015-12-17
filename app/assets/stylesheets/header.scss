@@ -1,6 +1,15 @@
-.main-header {
+$main-header-small-height: rem-calc(90);
 
-    &__logo {}
+.main-header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    &__logo {
+        img {
+            max-width: rem-calc(150);
+        }
+    }
 
     &__title {
         font-size: rem-calc(40);
@@ -10,6 +19,16 @@
     &__info {}
 }
 
-.main-header.row {
-    margin-bottom: rem-calc(24);
+@media #{$small-only} {
+    .main-header {
+        position: fixed;
+        z-index: 1;
+        min-width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.025);
+        height: $main-header-small-height;
+
+        & + div.columns {
+            margin-top: $main-header-small-height;
+        }
+    }
 }
