@@ -1,65 +1,71 @@
 <%= render "header" %>
 <% unless flash.empty? %><%= render "flash_notice" %><% end %>
 
-<main class="row main-content">
-    <!-- Introduction Section -->
-    <section>
-        <h2>Why It Pays to Go Solar</h2>
-        <h3 class="subheader">30&nbsp;Days&nbsp;Left to Cash In BIG</h3>
-        <p>
-            Local and Federal incentives for renewable energy overlap through January 2016, giving you an opportunity cash in on thousands to upgrade your home with cost-saving solar technology.
-        </p>
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/NNT4UmjUfNU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </section>
-    <!-- End Introduction Section -->
+<div class="columns small-10 small-offset-1">
+    <div class="row">
+        <h1 class="column small-12 text-center main-header__title">Lodi Solar Rebate</h1>
+    </div>
 
-    <!-- Rebate Section -->
-    <section>
-        <h2>Earn up to $7,000&nbsp;Residential / $40,000&nbsp;Commercial</h2>
-        <h3 class="red subheader">Rebate Expires in January 2016</h3>
-        <div class="row subheader-row xy-center">
-            <%= image_tag("lodi-electric-logo.jpeg", :class => "small-2 column") %>
-            <h3 class="subheader small-10 medium-10 large-11 column">City of Lodi Electric Utility</h3>
-        </div>
-        <p>The City of Lodi Electric Utility will be offering $525,000 in rebates to customers who install solar/photovoltaic systems in 2015. The city utility has earmarked $285,000 for residential systems and $240,000 for commercial and industrial photovoltaic systems.
-        </p>
-        <p>See full <a href="http://www.lodi.gov/press_releases/PR20141216_2015solarrebates.html">press release</a></p>
-    </section>
-    <!-- End Rebate Section -->
-
-    <!-- Tax Credit Section -->
-    <section>
-        <h2>Combine with Federal Tax&nbsp;Credit<br />For <em>Thousands</em> in Cash Back</h2>
-        <div class="row subheader-row xy-center">
-            <%= image_tag("irs-logo.png", :class => "small-2 column") %>
-            <h3 class="subheader small-10 medium-10 large-11 column">Federal IRS Renewable Energy Tax Credit</h3>
-        </div>
+    <main class="row main-content">
+        <!-- Introduction Section -->
+        <section>
+            <h2>Why It Pays to Go Solar</h2>
+            <h3 class="subheader">30&nbsp;Days&nbsp;Left to Cash In BIG</h3>
             <p>
-                Resident/Homeowner may claim a credit of 30% of qualified expenditures, including labor costs for on-site preparation, assembly or original system installation, and for     piping or wiring to interconnect a system to the home. If the federal tax credit exceeds tax liability, the excess amount may be carried forward to the next taxable year.
+                Local and Federal incentives for renewable energy overlap through January 2016, giving you an opportunity cash in on thousands to upgrade your home with cost-saving solar technology.
             </p>
-        <p>See <a href="http://programs.dsireusa.org/system/program/detail/1235">Energy Tax Credit Program Details</a></p>
-    </section>
-    <!-- End Tax Credit Section -->
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/NNT4UmjUfNU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <!-- End Introduction Section -->
 
-    <!-- County Financing  -->
-    <section>
-        <h2>County Financing</h2>
-        <h3>No&nbsp;Credit&nbsp;Requirements. $0&nbsp;Out&nbsp;of&nbsp;Pocket.</h3>
-        <div class="row subheader-row xy-center">
-            <%= image_tag("hero-logo.png", :class => "small-2 column") %>
-            <h3 class="subheader small-10 medium-10 large-11 column">HERO Program Financing</h3>
-        </div>
-        <p>For more information, visit the <a href="https://www.heroprogram.com/ca/lodi">Hero Program website</a></p>
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/hygWExcCbRo" frameborder="0" allowfullscreen></iframe>
-    </section>
-    <!--  End County Financing  -->
+        <!-- Rebate Section -->
+        <section>
+            <h2>Earn up to $7,000&nbsp;Residential / $40,000&nbsp;Commercial</h2>
+            <h3 class="red subheader">Rebate Expires in January 2016</h3>
+            <div class="row subheader-row xy-center">
+                <%= image_tag("lodi-electric-logo.jpeg", :class => "small-2 column") %>
+                <h3 class="subheader small-10 medium-10 large-11 column">City of Lodi Electric Utility</h3>
+            </div>
+            <p>The City of Lodi Electric Utility will be offering $525,000 in rebates to customers who install solar/photovoltaic systems in 2015. The city utility has earmarked $285,000 for residential systems and $240,000 for commercial and industrial photovoltaic systems.
+            </p>
+            <p>See full <a href="http://www.lodi.gov/press_releases/PR20141216_2015solarrebates.html">press release</a></p>
+        </section>
+        <!-- End Rebate Section -->
 
-    <!-- Contact Mailer Form -->
-    <section>
-        <h2>Contact Us For Your FREE Rebate Evaluation</h2>
-        <p>Our licensed contractors can help you take advantage of eligible rebates and financing</p>
-        <%= render "contacts/new" %>
-    </section>
-    <!-- End Contact Mailer Form -->
+        <!-- Tax Credit Section -->
+        <section>
+            <h2>Combine with Federal Tax&nbsp;Credit<br />For <em>Thousands</em> in Cash Back</h2>
+            <div class="row subheader-row xy-center">
+                <%= image_tag("irs-logo.png", :class => "small-2 column") %>
+                <h3 class="subheader small-10 medium-10 large-11 column">Federal IRS Renewable Energy Tax Credit</h3>
+            </div>
+                <p>
+                    Resident/Homeowner may claim a credit of 30% of qualified expenditures, including labor costs for on-site preparation, assembly or original system installation, and for     piping or wiring to interconnect a system to the home. If the federal tax credit exceeds tax liability, the excess amount may be carried forward to the next taxable year.
+                </p>
+            <p>See <a href="http://programs.dsireusa.org/system/program/detail/1235">Energy Tax Credit Program Details</a></p>
+        </section>
+        <!-- End Tax Credit Section -->
 
-</main>
+        <!-- County Financing  -->
+        <section>
+            <h2>County Financing</h2>
+            <h3>No&nbsp;Credit&nbsp;Requirements. $0&nbsp;Out&nbsp;of&nbsp;Pocket.</h3>
+            <div class="row subheader-row xy-center">
+                <%= image_tag("hero-logo.png", :class => "small-2 column") %>
+                <h3 class="subheader small-10 medium-10 large-11 column">HERO Program Financing</h3>
+            </div>
+            <p>For more information, visit the <a href="https://www.heroprogram.com/ca/lodi">Hero Program website</a></p>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/hygWExcCbRo" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <!--  End County Financing  -->
+
+        <!-- Contact Mailer Form -->
+        <section>
+            <h2>Contact Us For Your FREE Rebate Evaluation</h2>
+            <p>Our licensed contractors can help you take advantage of eligible rebates and financing</p>
+            <%= render "contacts/new" %>
+        </section>
+        <!-- End Contact Mailer Form -->
+
+    </main>
+</div>
