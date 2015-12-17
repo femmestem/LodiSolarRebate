@@ -1,8 +1,8 @@
 <%= simple_form_for @contact do |f| %>
-    <%= field_set_tag 'Contact Form' do %>
-        <%= f.input :name, label: "Name (required)", placeholder: "John Smith" %>
-        <%= f.input :email, label: "Email (required)", placeholder: "jsmith@email.com" %>
-        <%= f.input :phone, label: "Phone Number (required)", placeholder: "555-444-1234" %>
+    <%= field_set_tag 'Contact Form', class: "contact-form" do %>
+        <%= f.input :name, label: "Name", placeholder: "John Smith" %>
+        <%= f.input :email, label: "Email", placeholder: "jsmith@email.com" %>
+        <%= f.input :phone, label: "Phone Number", placeholder: "555-444-1234" %>
         <%= f.input :message, :required => false, label: "Questions or Comments", :as => :text, :input_html => { class: 'input-optional', 'rows' => 5} %>
         <%= field_set_tag 'Property for Rebate Evaluation (Optional)' do %>
             <%= f.input :street, :required => false, label: "Street Address", input_html: { class: 'input-optional' } %>
@@ -11,6 +11,8 @@
             <%= f.input :zip, :required => false, label: "Zip Code", input_html: { class: 'input-optional' } %>
         <% end %>
         <br />
-        <%= f.button :submit, label: "Submit", value: "Submit" %>
+        <div class="small-6 small-centered text-center columns">
+        <%= f.button :submit, label: "Submit", value: "Submit", class: "large-8" %>
+        </div>
     <% end %>
 <% end %>

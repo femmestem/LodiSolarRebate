@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+    <div data-alert class="alert-box success radius" tabindex="0" aria-live="assertive" role="alertdialog">
+      <%= flash[:notice] %>
+      <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+    </div>
+<% end %>
+
+<% if flash[:error] %>
+    <div data-alert class="alert-box alert radius" tabindex="0" aria-live="assertive" role="alertdialog">
+      <%= flash[:error] %>
+      <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+    </div>
+<% end %>
