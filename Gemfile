@@ -28,3 +28,5 @@ group :development do
   gem 'guard-bundler'
 end
 
+gem 'rails_12factor', group: :production
+
