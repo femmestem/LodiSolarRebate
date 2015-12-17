@@ -9,6 +9,7 @@
             align-content: center;
             margin-bottom: rem-calc(16);
             img {
+                min-width: rem-calc(85);
                 max-width: rem-calc(105);
             }
             .subheader {
